@@ -1,6 +1,7 @@
 * {
     margin: 0;
     padding: 0;
+    box-sizing: border-box;
 }
 
 body {
@@ -305,6 +306,13 @@ main {
     border-right: 2px solid rgb(165, 131, 165);
     padding-right: 5px;
     animation: blink 0.7s infinite;
+}
+.mail{
+    color: #010707;
+}
+.mail:hover{
+    color: #2f1161;
+    font-size: larger;
 }
 @keyframes blink {
   0% { border-color: transparent; }
