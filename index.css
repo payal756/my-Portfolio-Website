@@ -13,6 +13,7 @@ body {
 header {
     padding: 0;
 }
+
 /* Navigation Bar Styling */
 .container {
     width: 100%;
@@ -48,10 +49,13 @@ a {
     text-decoration: none;
     padding: 10px;
 }
-.git a,.live a {
+
+.git a,
+.live a {
     text-decoration: none;
     color: black;
 }
+
 a:hover {
     color: antiquewhite;
     font-size: 18px;
@@ -60,6 +64,7 @@ a:hover {
 main {
     padding-top: 12vh;
 }
+
 /* Home Section Styling */
 #home {
     display: flex;
@@ -116,7 +121,7 @@ main {
     background-color: rgb(128, 99, 155);
     font-size: 20px;
     padding: 10px 0px;
-    
+
 }
 
 .projects h2 {
@@ -214,7 +219,7 @@ main {
 /* Skills Section Styling */
 #skills {
     margin-top: 30px;
-    background-color:rgb(33, 124, 93);
+    background-color: rgb(33, 124, 93);
 }
 
 #skills h2 {
@@ -288,6 +293,7 @@ main {
     transform: scale(1.1);
     transition: 0.3s;
 }
+
 /* Contact Me Section Styling */
 #contactMe {
     text-align: center;
@@ -299,6 +305,7 @@ main {
     font-size: 18px;
     color: #333;
 }
+
 /* Animated Text Styling */
 #who {
     color: rgb(165, 131, 165);
@@ -307,15 +314,77 @@ main {
     padding-right: 5px;
     animation: blink 0.7s infinite;
 }
-.mail{
+
+.mail {
     color: #010707;
 }
-.mail:hover{
+
+.mail:hover {
     color: #2f1161;
     font-size: larger;
 }
+
 @keyframes blink {
-  0% { border-color: transparent; }
-  50% { border-color: rgb(165, 131, 165); }
-  100% { border-color: transparent; }
+    0% {
+        border-color: transparent;
+    }
+
+    50% {
+        border-color: rgb(165, 131, 165);
+    }
+
+    100% {
+        border-color: transparent;
+    }
+}
+
+/* Fix for very small screens (mobile <400px) */
+@media (max-width: 400px) {
+    .myprojects {
+        flex-direction: column;
+        align-items: center;
+        padding: 10px;
+    }
+
+    .project1,
+    .project2,
+    .project3 {
+        width: 95%;
+        padding: 15px;
+        font-size: 0.9rem;
+        text-align: center;
+    }
+
+    .project1 h3,
+    .project2 h3,
+    .project3 h3 {
+        font-size: 1.1rem;
+    }
+
+    .des {
+        font-size: 0.9rem;
+        line-height: 1.4rem;
+    }
+
+    .techused {
+        justify-content: center;
+        gap: 4px;
+    }
+
+    .techused span {
+        padding: 4px 6px;
+        font-size: 0.75rem;
+    }
+
+    .git,
+    .live {
+        font-size: 0.8rem;
+        padding: 6px 10px;
+        margin: 4px;
+    }
+
+    .git a,
+    .live a {
+        font-size: 0.8rem;
+    }
 }
